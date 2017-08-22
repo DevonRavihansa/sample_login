@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<footer class="container-fluid" th:fragment="footer">
+    <span class="text-muted">&copy; 2017 digispike.com</span>
+</footer>
+
+<th:block th:fragment="sources">
+    <!--jquery js-->
+    <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
+    <!--popper js-->
+    <script src="webjars/popper.js/1.11.1/dist/umd/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="webjars/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <!--custom scripts-->
+    <script src="js/scripts.js"></script>
+</th:block>
+
+</body>
+</html>

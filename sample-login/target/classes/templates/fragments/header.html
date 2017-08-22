@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:fragment="meta">
+        <meta charset="utf-8"/>
+        <meta http-equiv='cache-control' content='no-cache'/>
+        <meta http-equiv='expires' content='0'/>
+        <meta http-equiv='pragma' content='no-cache'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+    </th:block>
+    <th:block th:fragment="sources">
+        <!--bootstrap css-->
+        <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+        <!--fontawesome css-->
+        <link rel="stylesheet" type="text/css" href="webjars/fontawesome/4.7.0/css/font-awesome.min.css" />
+        <!--custom styles-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <!--angularjs-->
+        <script src="webjars/angularjs/1.6.4/angular.min.js"></script>
+    </th:block>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" th:fragment="topNavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Brand</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-bell-o"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-cog"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
